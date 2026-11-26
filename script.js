@@ -10,6 +10,7 @@
 // JS OBJECT
 // JS FUNCTION
 // JS DOM ELEMENT
+// ALART AND SHOW REAL TIME
 
 
 
@@ -199,3 +200,13 @@ function clickYellow(){
 function login (){
   alert("Login Successfull");
 }
+
+// SHOW REAL TIME
+function showRealTime() {
+  
+    const date = new Date(); 
+    document.getElementById("clock").innerText = date.toLocaleTimeString();
+    document.getElementById("date").innerText=date.toLocaleDateString();
+}
+setInterval(showRealTime, 1000);
+showRealTime();
